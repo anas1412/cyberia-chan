@@ -14,7 +14,8 @@ Usage
 
 Todo
 -----
-
-* Popup for Private Messaging
+* Fix the scroll down for new messages
+* Add Private Messaging
+* Add the news board
 *	Bug fixes
 *	UI Improvements
