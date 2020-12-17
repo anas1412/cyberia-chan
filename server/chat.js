@@ -13,13 +13,13 @@ function chatServer(io) {
 	// var channel = [];
 
 	io.on('connection', function(socket){
-		console.log('a Dollars member connected');
+		console.log('a member connected');
 
 		socket.on('login', function(obj){
 
 			var validate = 0;
 
-			console.log(obj.username + ' trys to enable a connection ')
+			console.log(obj.username + ' tries to enable a connection ')
 
 			for(key in onlineUsers) {
 				if(onlineUsers.hasOwnProperty(key) && onlineUsers[key] == obj.username){
