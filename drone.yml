@@ -1,0 +1,40 @@
+kind: pipeline
+type: kubernetes
+name: default
+clone:
+  disable: true  
+steps:
+  - name: clone
+    image: alpine/git
+    commands:
+    - git clone https://git.cyberia.institute/cyberia/chat.git .
+  - name: build
+    image: plugins/docker
+    settings:
+      repo: registry.cyberia.institute/cyberia/chat
+      registry: registry.cyberia.institute
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password    
+      tags:
+        - latest
+  - name: deploy
+    image: curlimages/curl
+    commands:
+      - sh deploy.sh
+    environment:
+      API_ENDPOINT:
+        from_secret: API_ENDPOINT
+      CLUSTER:
+        from_secret: CLUSTER
+      PROJECT:
+        from_secret: PROJECT
+      NAMESPACE:
+        from_secret: NAMESPACE
+      WORKLOAD:
+        from_secret: WORKLOAD
+      CATTLE_ACCESS_KEY:
+        from_secret: CATTLE_ACCESS_KEY
+      CATTLE_SECRET_KEY:
+        from_secret: CATTLE_SECRET_KEY    
