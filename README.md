@@ -3,7 +3,7 @@ aka cyberia-chan
 
 Intro
 ------
-Cyberia Channel is a Websocket based online IM platform based on drrr-like-chat.
+Cyberia Channel is a Websocket based online IM platform based on drrr-like-chat (Express JS)
 
 Usage
 -----
@@ -14,8 +14,9 @@ Usage
 
 Todo
 -----
+* Add Discord 0Auth
 * Fix the scroll down for new messages
-* Add Private Messaging
-* Add the news board
-*	Bug fixes
-*	UI Improvements
+* Add Rooms
+* Add the image board
+* UI Improvements
+* Bug fixes
