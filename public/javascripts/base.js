@@ -13,8 +13,8 @@ function eventBind () {
 
 	$('.chat-broadcast').on('click', function () {
 		CHAT.initPublicChat();
-		$('#dollars-options').fadeOut();
-		$('#dollars-room').fadeIn();
+		$('#cyberia-options').fadeOut();
+		$('#cyberia-room').fadeIn();
 	});
 	//Event click on private chat
 	// $('.chat-privately').on('click', function () {
@@ -22,31 +22,30 @@ function eventBind () {
 	// 	$('.chat-name').fadeIn();
 	// });
 
-
 	$('#login-submit').on('click', function () {
 		if( CHAT.usernameSubmit() ) {
-			$('#dollars').fadeOut();
-			$('#dollars-options').fadeIn();
+			$('#cyberia').fadeOut();
+			$('#cyberia-options').fadeIn();
 		}
 	});
 	$('#form-name').keydown(function (event) {
 		if ( event.which == 13 && CHAT.usernameSubmit() ){
-			$('#dollars').fadeOut();
-			$('#dollars-options').fadeIn();
+			$('#cyberia').fadeOut();
+			$('#cyberia-options').fadeIn();
 		}
 	});
 
 	$('#form-chat').keydown(function (event) {
 		if ( event.which == 13 ) {
 			CHAT.initPrivateChat();
-			$('#dollars-options').fadeOut();
-			$('#dollars-room').fadeIn();
+			$('#cyberia-options').fadeOut();
+			$('#cyberia-room').fadeIn();
 		};
 	})
 	$('#form-private-name').click(function (event) {
 		CHAT.initPrivateChat();
-		$('#dollars-options').fadeOut();
-		$('#dollars-room').fadeIn();
+		$('#cyberia-options').fadeOut();
+		$('#cyberia-room').fadeIn();
 	});
 
 	$('.message-input button').on('click', function () {
@@ -55,6 +54,9 @@ function eventBind () {
 	$('.message-input input').keydown(function (event) {
 		if ( event.which == 13 )
 			CHAT.submit();
+	});
+	$('.logout button').on('click', function () {
+		CHAT.logout();
 	});
 }
 

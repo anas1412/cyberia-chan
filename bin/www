@@ -5,8 +5,9 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('drrr-socketio-chat:server');
+var debug = require('debug')('cyboard:server');
 var http = require('http');
+
 var chatServer = require("../server/chat");
 
 /**

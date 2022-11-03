@@ -76,7 +76,7 @@ function chatServer(io) {
 		socket.on('message', function(obj){
 			obj.content = xss(obj.content);
 			io.emit('message', obj);
-			console.log(obj.username + 'to：' + obj.content);
+			console.log(obj.username + ' to：' + obj.content);
 		});
 
 		socket.on('directMessage', function(obj){
@@ -84,7 +84,7 @@ function chatServer(io) {
 				if(onlineUsers.hasOwnProperty(key) && onlineUsers[key] == obj.userto){
 					obj.content = xss(obj.content);
 					io.emit('directMessage' + obj.userto + obj.username, obj);
-					console.log(obj.username + 'to ' + obj.userto + ' said：' + obj.content);
+					console.log(obj.username + ' to ' + obj.userto + ' said：' + obj.content);
 				}
 			}
 		});
