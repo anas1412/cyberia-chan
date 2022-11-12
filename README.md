@@ -22,7 +22,7 @@ Simplified usage:
 Todo
 -----
 * Add Discord 0Auth
-* Add Online People
+* Add Online People list
 * Add an Image Board
 * Add Rooms
 * UI Improvements
