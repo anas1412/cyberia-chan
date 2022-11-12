@@ -260,6 +260,7 @@ function Chat() {
 		scrollToBottom: function () {
 			// Todo: fix scroll issue or workaround
 			// Workaround 1: Use a golden varaible.
+			window.scrollTo(0, document.body.scrollHeight);
 
 			this.scrollObj = ($(window).scrollTop() == 0) ? true : false;
 			if ( this.scrollObj == true || ( $(document).height() - ( $(window).scrollTop() + $(window).height() ) ) * (Math.sqrt(5) - 1) / 2 <= $('section.user').last().height() )

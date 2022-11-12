@@ -6,6 +6,7 @@ body {
 	/*padding: 50px;*/
 	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 	background: #090b2b;
+	scroll-behavior: smooth;
 }
 
 a {
