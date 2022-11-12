@@ -15,7 +15,7 @@ Usage for testing:
 Simplified usage:
 -----
 
-1.	Run `docker build -t anas1412/cyberia-chan . to build docker image.
+1.	Run `docker build -t anas1412/cyberia-chan .` to build docker image.
 2.	Run `docker-compose up -d`
 3.	Open `http://your-ip` 
 
