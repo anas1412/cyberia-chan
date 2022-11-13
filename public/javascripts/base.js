@@ -7,9 +7,9 @@ function eventBind () {
 	$('.avatar-select').click( function () {
 		if ( CHAT.generateAvatar(this) ) {
 			$('.chat-avatar-select').fadeOut();
-			//$('.chat-select').fadeIn();
+			$('.chat-select').fadeIn();
 			//Enter chat directly instead of choosing from menu
-			$('#cyberia-room').fadeIn();
+			//$('#cyberia-room').fadeIn();
 		};
 	});
 
