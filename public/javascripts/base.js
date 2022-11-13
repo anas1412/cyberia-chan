@@ -143,7 +143,7 @@ function Chat() {
 				html += ' joined the room, '+ o.onlineCount +' connected users.';
 			//} else if (action == 'joinPrv') {
 			//	html += ' : Private Room コネクト'
-			} else html += ' has left the room,'+ o.onlineCount +' connected users left.';
+			} else html += ' has left the room, '+ o.onlineCount +' connected users left.';
 
 			// html += (action == 'joinPub') ? ' さんが入室しました' : ' さんが退室しました';
 
