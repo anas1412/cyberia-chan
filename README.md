@@ -30,7 +30,8 @@ Todo
 -----
 * Add Discord 0Auth
 * Add Online People list
-* Add an Image Board
+* Add a Gallery
+* Add Threads with comments (stars if somehow I implimented discord auth)
 * Add Rooms
 * UI Improvements
 * Bug fixes
