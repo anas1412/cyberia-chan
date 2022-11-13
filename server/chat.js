@@ -37,6 +37,7 @@ function chatServer(io) {
 				socket.name = obj.userid;
 				onlineUsers[obj.userid] = xss(obj.username);
 				onlineCount++;
+				//add user list maybe?
 				console.log(obj.username + ' connected');
 			};
 
