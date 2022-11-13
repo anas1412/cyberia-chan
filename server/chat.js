@@ -45,7 +45,7 @@ function chatServer(io) {
 		
 		socket.on('joinPub', function(obj){
 			io.emit('joinPub', {onlineUsers:onlineUsers, onlineCount:onlineCount, user:obj});
-			console.log(obj.username + ' joined the room');
+			console.log(obj.username + ' joined the room, ' + onlineCount +' connected users');
 		});
 
 		socket.on('joinPrv', function(obj){

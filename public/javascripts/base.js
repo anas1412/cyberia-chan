@@ -7,7 +7,9 @@ function eventBind () {
 	$('.avatar-select').click( function () {
 		if ( CHAT.generateAvatar(this) ) {
 			$('.chat-avatar-select').fadeOut();
-			$('.chat-select').fadeIn();
+			//$('.chat-select').fadeIn();
+			//Enter chat directly instead of choosing from menu
+			$('#cyberia-room').fadeIn();
 		};
 	});
 
@@ -92,7 +94,7 @@ function Chat() {
 			}
 		}),
 		logout: function(){
-			//this.socket.disconnect();
+			this.socket.disconnect();
 			location.reload();
 		},
 		submit: function(){
@@ -138,10 +140,10 @@ function Chat() {
 			html += '►► ' + user.username;
 
 			if (action == 'joinPub') {
-				html += ' joined the room.';
+				html += ' joined the room, '+ o.onlineCount +' connected users.';
 			//} else if (action == 'joinPrv') {
 			//	html += ' : Private Room コネクト'
-			} else html += ' has left the room.';
+			} else html += ' has left the room,'+ o.onlineCount +' connected users left.';
 
 			// html += (action == 'joinPub') ? ' さんが入室しました' : ' さんが退室しました';
 
