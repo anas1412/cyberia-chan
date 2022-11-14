@@ -29,9 +29,9 @@ Simplified usage:
 Todo
 -----
 * Add Discord 0Auth
-* Add Online People list
+* Add Online People list on the side
 * Add a Gallery
-* Add Threads with comments (stars if somehow I implimented discord auth)
+* Add Threads with comments (stars if somehow I add discord auth)
 * Add Rooms
 * UI Improvements
 * Bug fixes
