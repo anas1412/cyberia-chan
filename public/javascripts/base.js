@@ -134,18 +134,19 @@ function Chat() {
 		updateInfo:function(o, action){
 			 //var onlineUsers = o.onlineUsers;
 			 //var onlineCount = o.onlineCount;
-
+			 var users = Object.values(o.onlineUsers);
 			var user = o.user;
-
+			
 			var html = '';
 			html += '<div class="message-system">';
 			html += '►► ' + user.username;
 
 			if (action == 'joinPub') {
-				html += ' joined the room, '+ o.onlineCount +' connected users.';
+				html += ' joined the room, '+ o.onlineCount +' connected users: ' + users;
+				
 			//} else if (action == 'joinPrv') {
 			//	html += ' : Private Room コネクト'
-			} else html += ' has left the room, '+ o.onlineCount +' connected users left.';
+			} else html += ' has left the room, '+ o.onlineCount +' connected users: ' + users;
 
 			// html += (action == 'joinPub') ? ' さんが入室しました' : ' さんが退室しました';
 
