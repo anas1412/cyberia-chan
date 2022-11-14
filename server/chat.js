@@ -18,6 +18,7 @@ function chatServer(io) {
 		socket.on('login', function(obj){
 
 			var validate = 0;
+			const userList =[];
 
 			console.log(obj.username + ' tries to enable a connection ')
 
@@ -39,8 +40,9 @@ function chatServer(io) {
 				onlineCount++;
 				console.log(obj.username + ' connected');
 			};
-
 			console.log(onlineUsers);
+			let users = Object.values(onlineUsers);
+			console.log(users);
 		});
 		
 		socket.on('joinPub', function(obj){
