@@ -6,7 +6,9 @@ Cyberia Channel is a Websocket based online IM platform based on drrr-like-chat 
   <img src="https://github.com/anas1412/cyberia-chan/blob/main/image2.jpg" width="350" alt="image2">
 </p>
 
-
+Live DEMO:
+-----
+`http://85-159-212-107.ip.linodeusercontent.com/`
 
 Developement usage:
 -----
