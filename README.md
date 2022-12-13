@@ -15,16 +15,17 @@ Cyberia Channel is a Websocket based online IM platform based on drrr-like-chat 
 Usage for testing:
 -----
 
-1.	Use `npm i` to install.
-2.	Run with `npm start`
-3.	Open `http://your-ip:3000` 
+1.	Execute `cd cyberia-chan` 
+2.	Use `npm i` to install.
+3.	Run with `npm start`
+4.	Open `http://your-ip:3000` OR simply `http://127.0.0.1:3000` on localhost
 
 Simplified usage:
 -----
 
-1.	Run `docker build -t anas1412/cyberia-chan .` to build docker image.
+1.	Execute `cd cyberia-chan` 
 2.	Run `docker-compose up -d`
-3.	Open `http://your-ip` 
+3.	Open `http://your-ip` OR simply `http://127.0.0.1` on localhost
 
 Todo
 -----
