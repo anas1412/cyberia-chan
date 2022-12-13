@@ -1,8 +1,9 @@
 version: "3"
 services:
   cyberia_app:
-    image: anas1412/cyberia-chan
+    image: cyberia-chan
     container_name: cyberia-chan
+    build: ./cyberia-chan
     restart: on-failure
     ports:
      - 80:3000
