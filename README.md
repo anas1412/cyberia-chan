@@ -12,7 +12,7 @@ Cyberia Channel is a Websocket based online IM platform based on drrr-like-chat 
 
 
 
-Usage for testing:
+Developement usage:
 -----
 
 1.	Execute `cd cyberia-chan` 
@@ -20,7 +20,7 @@ Usage for testing:
 3.	Run with `npm start`
 4.	Open `http://your-ip:3000` OR simply `http://127.0.0.1:3000` on localhost
 
-Simplified usage:
+Run with docker:
 -----
 
 1.	Execute `cd cyberia-chan` 
