@@ -1,8 +1,4 @@
 # Cyberia Channel
-aka cyberia-chan
-
-Intro
-------
 Cyberia Channel is a Websocket based online IM platform based on drrr-like-chat (Express JS)
 
 <p align="center">
