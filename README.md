@@ -10,6 +10,8 @@ Live DEMO:
 -----
 `http://85-159-212-107.ip.linodeusercontent.com/`
 
+# Getting Started
+
 Developement usage:
 -----
 
@@ -34,3 +36,11 @@ Todo
 * Add Rooms
 * UI Improvements
 * Bug fixes
+
+Contributing
+-----
+We welcome contributions to Cyberia-chan! If you have an idea for a new feature or have found a bug, please open an issue on the GitHub repository.
+
+License
+-----
+Cyberia-chan is licensed under the MIT License. See LICENSE for more information.
